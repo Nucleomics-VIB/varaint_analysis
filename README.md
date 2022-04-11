@@ -13,7 +13,7 @@ NOTE: We use here ```bcftools mpileup``` (with new arguments) rather than the ol
 
 ### GATK4 best ptractice (very slow single core steps)
 
-### elPrep5 GATK4 alternative (developped for human genomes)
+### elPrep5 GATK4 accellerated alternative (developped for human genomes)
 
 ### freebayes alternatrive (parallel version used heer for speedup)
 
