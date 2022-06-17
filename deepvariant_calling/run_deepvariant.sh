@@ -22,6 +22,9 @@ export TMPDIR="/tmp_dir"
 # use almost all threads
 nthr=84
 
+# how much RAM can java use? - set these to less than your available RAM!
+javaopts="-Xms24g -Xmx24g"
+
 # cycle through 7 samples
 for bam in input/*_rawmappings_recal.bam; do
 
@@ -69,7 +72,7 @@ conda activate ${myenv} || \
     && exit 1 )
 
 glnexus_cli –config WGS \
-  output/*.g.vcf | 
+  output/*.g.vcf | \
   bcftools view - | \
   bgzip -@ 24 -c \
   > output/merged_7_samples.vcf.gz && \
