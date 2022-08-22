@@ -21,9 +21,9 @@ NOTE: We use here ```bcftools mpileup``` (with new arguments) rather than the ol
 
 ### Google deepvariant alternative (very popular)
 
-### freebayes alternatrive (parallel version used heer for speedup)
+### freebayes alternatrive (parallel version used here for speedup)
 
-NOTE: Freebayes is used here as it is a very poular tool. However freebayes does not (yet) seem to produce gVCF to a level comparable to other tools, we are therefore producing separate VCF files here and merging them with bcftools. A particular issue is when a varisn in one genome is a SNV while an indel is present in another genome. In such case, merging will not reflect the complexity of the situation and might lead to call issues.
+NOTE: Freebayes is used here as it is a very poular tool. However freebayes does not (yet) seem to produce gVCF to a level comparable to other tools, we are therefore producing separate VCF files here and merging them with bcftools. A particular issue is when a variant in one genome is a SNV while an indel is present in another genome. In such case, merging will not reflect the complexity of the situation and might lead to call issues.
 
 # Variant annotation and filtering
 
